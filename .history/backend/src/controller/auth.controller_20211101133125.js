@@ -1,3 +1,0 @@
-const signIn = (res,req) =>{
-    
-}

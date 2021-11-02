@@ -1,4 +1,0 @@
-
-const signIn = (data) =>{
-    
-}
