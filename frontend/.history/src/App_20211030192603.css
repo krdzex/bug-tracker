@@ -1,0 +1,14 @@
+.menuWrapper {
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  background-color: #287bff;
+  border-left: 10px solid #287bff;
+  overflow: hidden;
+}
+
+.menuWrapper ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+}

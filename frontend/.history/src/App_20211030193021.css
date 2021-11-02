@@ -1,0 +1,31 @@
+.menuWrapper {
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  background-color: #287bff;
+  border-left: 10px solid #287bff;
+  overflow: hidden;
+}
+
+.menuWrapper ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.menuWrapper ul li{
+  position: relative;
+  width: 100%;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.menuWrapper ul li a{
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: white;
+}

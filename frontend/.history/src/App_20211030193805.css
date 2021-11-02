@@ -1,0 +1,54 @@
+.menuWrapper {
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  background-color: #2b;
+  border-left: 10px solid #287bff;
+  overflow: hidden;
+}
+
+.menuWrapper ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.menuWrapper ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.menuWrapper ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menuWrapper ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.menuWrapper ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 80px;
+  text-align: center;
+  z-index: 1;
+}
