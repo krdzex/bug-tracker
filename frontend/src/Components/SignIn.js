@@ -17,12 +17,6 @@ const SignIn = () => {
     const onChange = name => event => {
         setValues({ ...values, [name]: event.target.value })
     }
-
-    const onRelease = () => {
-        if (values.role === "") {
-            setValues({ ...values, role: "" })
-        }
-    }
     const [firstTime, setFirstTime] = useState(true)
     const onSubmit = (e) => {
         e.preventDefault()
