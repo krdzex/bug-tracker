@@ -533,9 +533,9 @@
   }
   .menuWrapper div {
     bottom: 15px;
+    cursor: pointer;
     overflow: hidden;
-    width: 56px;
-}
+  }
   .mapWrapper {
     width: initial;
   }
@@ -549,10 +549,6 @@
     border-radius: 30px;
     width: 56px;
     overflow: hidden;
-  }
-  .bugCard{
-    margin: 20px;
-    min-width: initial;
   }
 }
 

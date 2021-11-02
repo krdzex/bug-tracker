@@ -47,13 +47,13 @@ const SignIn = () => {
             }
         }).catch(err => console.log(err))
     }
-    if (values.redirect) return <Redirect to={"/"} />
+    if(values.redirect) return <Redirect to={"/"}/>
     return (
         <div className="registrationWrapper">
             <div className="signInCard">
                 <div className="form" id="signForm">
                     <h2>Login</h2>
-                    <form onSubmit={(e) => onSubmit(e)}>
+                    <form onSubmit={(e) =>onSubmit(e)}>
                         <div className="inputBox">
                             <input type="text" placeholder="username" className={errors.userName ? "error" : "success"} value={values.userName} onChange={onChange("userName")} />
                             <div className="icon"><Icon icon="bx:bxs-user" /></div>
@@ -63,6 +63,17 @@ const SignIn = () => {
                             <input type="password" placeholder="password" className={errors.password ? "error" : "success"} value={values.password} onChange={onChange("password")} />
                             <div className="icon password"><Icon icon="ri:lock-password-fill" /></div>
                             {errors.password && (<span>{errors.password}</span>)}
+                        </div>
+                        <div className="inputBox datalist">
+                            <input type="text" list="role" className={errors.role ? "error" : "success"} placeholder="Choose your role" onMouseDown={() => setValues({ ...values, role: "" })} value={values.role} onKeyDown={(event) => {
+                                event.preventDefault();
+                            }} onChange={onChange("role")} onBlur={() => onRelease()} />
+                            <datalist id="role">
+                                <option value="Admin" />
+                                <option value="User" />
+
+                            </datalist>
+                            {errors.role && (<span>{errors.role}</span>)}
                         </div>
                         <div className="inputBox">
                             <input type="submit" value="Login" />

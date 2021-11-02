@@ -47,13 +47,13 @@ const SignIn = () => {
             }
         }).catch(err => console.log(err))
     }
-    if (values.redirect) return <Redirect to={"/"} />
+    if(values.redirect) return <Redirect to={"/"}/>
     return (
         <div className="registrationWrapper">
             <div className="signInCard">
                 <div className="form" id="signForm">
                     <h2>Login</h2>
-                    <form onSubmit={(e) => onSubmit(e)}>
+                    <form onSubmit={(e) =>onSubmit(e)}>
                         <div className="inputBox">
                             <input type="text" placeholder="username" className={errors.userName ? "error" : "success"} value={values.userName} onChange={onChange("userName")} />
                             <div className="icon"><Icon icon="bx:bxs-user" /></div>

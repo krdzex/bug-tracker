@@ -532,9 +532,11 @@
     transform: rotate( 90deg) translate(-230px, -60px)
   }
   .menuWrapper div {
+    position: absolute;
     bottom: 15px;
+    background-color: #f43648;
+    cursor: pointer;
     overflow: hidden;
-    width: 56px;
 }
   .mapWrapper {
     width: initial;
@@ -549,10 +551,6 @@
     border-radius: 30px;
     width: 56px;
     overflow: hidden;
-  }
-  .bugCard{
-    margin: 20px;
-    min-width: initial;
   }
 }
 

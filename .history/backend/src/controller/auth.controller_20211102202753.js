@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken"
 import User from "../models/user.model"
 import config from "../../config/config"
 const signIn = (req, res) => {
-    User.findOne({ "userName": req.body.userName }, (err, user) => {
+    User.findOne({ "userName": req.body.userName, role: req.body.role }, (err, user) => {
         if (err || !user) {
             return res.status("401").json({
                 userName: "Username and password dont match",

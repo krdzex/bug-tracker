@@ -550,10 +550,6 @@
     width: 56px;
     overflow: hidden;
   }
-  .bugCard{
-    margin: 20px;
-    min-width: initial;
-  }
 }
 
 @media (min-width: 481px) and (max-width: 767.98px) {
